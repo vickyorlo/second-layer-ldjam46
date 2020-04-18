@@ -7,12 +7,10 @@
 [ext_resource path="res://bounceoff_area.gd" type="Script" id=5]
 [ext_resource path="res://Scenes/GUI.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/background.jpg" type="Texture" id=7]
-
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 30.1967, 1087.87 )
+[ext_resource path="res://Scenes/wall.tscn" type="PackedScene" id=8]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 801.775, 224.167 )
+extents = Vector2( 765, 225 )
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 337.422, 31.5765 )
@@ -25,59 +23,65 @@ position = Vector2( 446.316, 183.842 )
 [node name="paddle" parent="." instance=ExtResource( 2 )]
 position = Vector2( 355.473, 351.378 )
 
-[node name="StaticBody2D" type="Node2D" parent="."]
+[node name="walls" type="Node2D" parent="."]
+position = Vector2( 250, 0 )
 
-[node name="Node2D" type="StaticBody2D" parent="StaticBody2D"]
-
-[node name="Polygon2D" type="Polygon2D" parent="StaticBody2D/Node2D"]
-polygon = PoolVector2Array( -27.9999, -1090, 31.2766, -1088.21, 31.2907, 1087.75, -29.45, 1086.45 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/Node2D"]
-shape = SubResource( 1 )
-
-[node name="Node2D2" type="StaticBody2D" parent="StaticBody2D"]
-position = Vector2( 720, 0 )
-
-[node name="Polygon2D" type="Polygon2D" parent="StaticBody2D/Node2D2"]
-polygon = PoolVector2Array( -27.9999, -1090, 31.2766, -1088.21, 31.2907, 1087.75, -29.45, 1086.45 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/Node2D2"]
-shape = SubResource( 1 )
-
-[node name="death" type="Area2D" parent="."]
+[node name="death" type="Area2D" parent="walls"]
 position = Vector2( 401.77, 994.474 )
-scale = Vector2( -0.454465, 0.197337 )
+rotation = -3.14159
+scale = Vector2( 0.454465, -0.197337 )
 script = ExtResource( 4 )
 
-[node name="Sprite" type="Sprite" parent="death"]
+[node name="Sprite" type="Sprite" parent="walls/death"]
 scale = Vector2( 2.65059, 1.00032 )
 texture = ExtResource( 3 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="death"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walls/death"]
 position = Vector2( 88.1542, 137.528 )
 shape = SubResource( 2 )
 
-[node name="bounceoff" type="StaticBody2D" parent="."]
+[node name="bounceoff" type="StaticBody2D" parent="walls"]
 position = Vector2( 366.382, -1048.25 )
 rotation = 3.14159
+scale = Vector2( 1, 1 )
 script = ExtResource( 5 )
 
-[node name="Sprite" type="Sprite" parent="bounceoff"]
+[node name="Sprite" type="Sprite" parent="walls/bounceoff"]
 scale = Vector2( 1, 0.2 )
 texture = ExtResource( 3 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="bounceoff"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walls/bounceoff"]
 position = Vector2( 0, 1.22778 )
 scale = Vector2( 0.95174, 1 )
 shape = SubResource( 3 )
 
-[node name="background" type="Sprite" parent="."]
-position = Vector2( 270.564, -25.2827 )
-rotation = 1.5708
+[node name="wall" parent="walls" instance=ExtResource( 8 )]
+
+[node name="wall2" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 720, 0 )
+
+[node name="Polygon2D" type="Polygon2D" parent="walls"]
+z_index = -5
+color = Color( 0.164706, 0.168627, 0.262745, 1 )
+polygon = PoolVector2Array( 20, -1100, 700, -1100, 700, 1100, 20, 1100 )
+
+[node name="frontground" type="CanvasLayer" parent="."]
+
+[node name="GUI" parent="frontground" instance=ExtResource( 6 )]
+
+[node name="background2" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="background" type="Sprite" parent="background2"]
+position = Vector2( 671.062, 446.62 )
+scale = Vector2( 0.699309, 0.699309 )
 z_index = -6
 texture = ExtResource( 7 )
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="GUI" parent="CanvasLayer" instance=ExtResource( 6 )]
-[connection signal="body_entered" from="death" to="death" method="_on_death_body_entered"]
+[node name="background2" type="Sprite" parent="background2"]
+position = Vector2( -47.7578, 434.932 )
+scale = Vector2( 0.699309, 0.699309 )
+z_index = -6
+texture = ExtResource( 7 )
+[connection signal="died" from="ball" to="frontground/GUI" method="_on_ball_died"]
+[connection signal="body_entered" from="walls/death" to="walls/death" method="_on_death_body_entered"]
