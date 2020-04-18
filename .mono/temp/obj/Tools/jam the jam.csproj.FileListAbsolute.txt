@@ -1,0 +1,6 @@
+D:\~Home\Projects\Godot\jam\.mono\temp\bin\Tools\jam the jam.dll
+D:\~Home\Projects\Godot\jam\.mono\temp\bin\Tools\jam the jam.pdb
+D:\~Home\Projects\Godot\jam\.mono\temp\obj\Tools\jam the jam.csprojAssemblyReference.cache
+D:\~Home\Projects\Godot\jam\.mono\temp\obj\Tools\jam the jam.csproj.CoreCompileInputs.cache
+D:\~Home\Projects\Godot\jam\.mono\temp\obj\Tools\jam the jam.dll
+D:\~Home\Projects\Godot\jam\.mono\temp\obj\Tools\jam the jam.pdb
