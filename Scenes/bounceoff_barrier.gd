@@ -1,5 +1,5 @@
 extends StaticBody2D
-
+class_name bounceoff_barrier
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -17,6 +17,5 @@ func _ready():
 
 
 func _on_bounceoff_body_entered(body):
-	if body is ball:
+	if body.is_class("ball"):
 		body.bounceoff()
-

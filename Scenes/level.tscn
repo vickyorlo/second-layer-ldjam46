@@ -1,19 +1,13 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scenes/ball.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/paddle.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Assets/stop.png" type="Texture" id=3]
-[ext_resource path="res://death_area.gd" type="Script" id=4]
-[ext_resource path="res://bounceoff_area.gd" type="Script" id=5]
+[ext_resource path="res://Scenes/bounceoff_barrier.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/death_barrier.tscn" type="PackedScene" id=4]
+[ext_resource path="res://gravity_soup.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/GUI.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/background.jpg" type="Texture" id=7]
 [ext_resource path="res://Scenes/wall.tscn" type="PackedScene" id=8]
-
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 765, 225 )
-
-[sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 337.422, 31.5765 )
 
 [node name="level" type="Node2D"]
 
@@ -26,34 +20,9 @@ position = Vector2( 355.473, 351.378 )
 [node name="walls" type="Node2D" parent="."]
 position = Vector2( 250, 0 )
 
-[node name="death" type="Area2D" parent="walls"]
-position = Vector2( 401.77, 994.474 )
-rotation = -3.14159
-scale = Vector2( 0.454465, -0.197337 )
-script = ExtResource( 4 )
+[node name="death" parent="walls" instance=ExtResource( 4 )]
 
-[node name="Sprite" type="Sprite" parent="walls/death"]
-scale = Vector2( 2.65059, 1.00032 )
-texture = ExtResource( 3 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="walls/death"]
-position = Vector2( 88.1542, 137.528 )
-shape = SubResource( 2 )
-
-[node name="bounceoff" type="StaticBody2D" parent="walls"]
-position = Vector2( 366.382, -1048.25 )
-rotation = 3.14159
-scale = Vector2( 1, 1 )
-script = ExtResource( 5 )
-
-[node name="Sprite" type="Sprite" parent="walls/bounceoff"]
-scale = Vector2( 1, 0.2 )
-texture = ExtResource( 3 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="walls/bounceoff"]
-position = Vector2( 0, 1.22778 )
-scale = Vector2( 0.95174, 1 )
-shape = SubResource( 3 )
+[node name="bounceoff" parent="walls" instance=ExtResource( 3 )]
 
 [node name="wall" parent="walls" instance=ExtResource( 8 )]
 
@@ -83,5 +52,6 @@ position = Vector2( -47.7578, 434.932 )
 scale = Vector2( 0.699309, 0.699309 )
 z_index = -6
 texture = ExtResource( 7 )
-[connection signal="died" from="ball" to="frontground/GUI" method="_on_ball_died"]
-[connection signal="body_entered" from="walls/death" to="walls/death" method="_on_death_body_entered"]
+
+[node name="gravity_soup" parent="." instance=ExtResource( 5 )]
+position = Vector2( 565.519, -556.886 )

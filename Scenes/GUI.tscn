@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scenes/GUI.gd" type="Script" id=1]
 [ext_resource path="res://Assets/You-Died.webp" type="Texture" id=2]
 [ext_resource path="res://Assets/font - Glacial Indifference.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Assets/hp_bar_but_evil.png" type="Texture" id=4]
+[ext_resource path="res://Assets/hp_bar.png" type="Texture" id=5]
 
 [node name="GUI" type="Control"]
 margin_right = 1280.0
@@ -31,10 +33,11 @@ texture = ExtResource( 2 )
 stretch_mode = 5
 
 [node name="Health" type="Label" parent="."]
-margin_left = 40.0
-margin_top = 39.0
-margin_right = 255.0
-margin_bottom = 155.0
+margin_left = 1044.16
+margin_top = 23.4917
+margin_right = 1259.16
+margin_bottom = 139.492
+rect_rotation = 10.0
 custom_fonts/font = ExtResource( 3 )
 text = "Health"
 __meta__ = {
@@ -42,12 +45,34 @@ __meta__ = {
 }
 
 [node name="Score" type="Label" parent="."]
-margin_left = 1023.48
-margin_top = 37.7076
-margin_right = 1238.48
-margin_bottom = 153.708
+margin_left = 3.81387
+margin_top = 45.4618
+margin_right = 218.814
+margin_bottom = 161.462
+rect_rotation = -10.0
 custom_fonts/font = ExtResource( 3 )
 text = "Score"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="score_number" type="Label" parent="."]
+margin_left = 10.2757
+margin_top = 104.91
+margin_right = 225.276
+margin_bottom = 220.91
+rect_rotation = -10.0
+custom_fonts/font = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HealthBar" type="TextureProgress" parent="."]
+margin_left = 1014.5
+margin_top = 107.265
+margin_right = 1271.5
+margin_bottom = 147.265
+rect_rotation = 10.0
+value = 100.0
+texture_under = ExtResource( 4 )
+texture_progress = ExtResource( 5 )

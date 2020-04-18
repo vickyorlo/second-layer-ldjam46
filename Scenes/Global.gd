@@ -6,7 +6,10 @@ extends Node
 # var b = "text"
 
 export(int) var score = 0
-export(int) var health = 100
+export(float) var health = 100.0
+export(float) var heatlh_drain = 5
+
+signal die
 
 export(Array, String) var quotes
 
@@ -20,6 +23,9 @@ func _ready():
 	pass # Replace with function body.
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	health -= 10 * delta
+	pass
+
+func gameover():
+	emit_signal("die")

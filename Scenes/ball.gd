@@ -5,7 +5,6 @@ class_name ball
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-signal died
 
 export var max_speed = 1000.0
 
@@ -28,5 +27,12 @@ func bounceoff():
 
 func death():
 	queue_free()
-	emit_signal("died")
-	pass
+	Global.gameover()
+
+
+func _on_RigidBody2D_body_entered(body):
+	if body is paddle:
+		Global.health += 15
+		Global.score += 10
+	if body is bounceoff_barrier:
+		Global.score += 50
