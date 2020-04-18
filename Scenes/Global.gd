@@ -12,6 +12,11 @@ export(Array, String) var quotes
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	quotes = [
+		"nutbusters",
+		"how can mirrors be real if our eyes are not real",
+		""
+	]
 	pass # Replace with function body.
 
 
