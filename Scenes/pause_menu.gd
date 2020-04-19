@@ -10,17 +10,17 @@ var selected_menu
 
 # Called when the node enters the scene tree for the first time.
 func change_menu_color():
-	$resume.color = Color.gray
-	$restart.color = Color.gray
-	$quit.color = Color.gray
+	$resume.color = Color.blanchedalmond
+	$restart.color = Color.wheat
+	$quit.color = Color.bisque
 
 	match selected_menu:
 		0:
-			$resume.color = Color.yellow
+			$resume.color = Color.peru
 		1:
-			$restart.color = Color.blue
+			$restart.color = Color.azure
 		2:
-			$quit.color = Color.green
+			$quit.color = Color.chartreuse
 
 func _ready():
 	pass # Replace with function body.
