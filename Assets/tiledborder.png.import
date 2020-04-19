@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/border.png-b4d2264339d7afc72f4c1cf5638f806c.stex"
+path="res://.import/tiledborder.png-33473157c4e0dfd49a30e80db6cedc57.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/border.png"
-dest_files=[ "res://.import/border.png-b4d2264339d7afc72f4c1cf5638f806c.stex" ]
+source_file="res://Assets/tiledborder.png"
+dest_files=[ "res://.import/tiledborder.png-33473157c4e0dfd49a30e80db6cedc57.stex" ]
 
 [params]
 
@@ -21,7 +21,7 @@ compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=1
 flags/filter=true
-flags/mipmaps=false
+flags/mipmaps=true
 flags/anisotropic=false
 flags/srgb=2
 process/fix_alpha_border=true
