@@ -4,3 +4,8 @@ D:\~Home\Projects\Godot\jam\.mono\temp\obj\Tools\jam the jam.csprojAssemblyRefer
 D:\~Home\Projects\Godot\jam\.mono\temp\obj\Tools\jam the jam.csproj.CoreCompileInputs.cache
 D:\~Home\Projects\Godot\jam\.mono\temp\obj\Tools\jam the jam.dll
 D:\~Home\Projects\Godot\jam\.mono\temp\obj\Tools\jam the jam.pdb
+C:\Users\Naamed\Documents\GitHub\ludum64\.mono\temp\bin\Tools\jam the jam.dll
+C:\Users\Naamed\Documents\GitHub\ludum64\.mono\temp\bin\Tools\jam the jam.pdb
+C:\Users\Naamed\Documents\GitHub\ludum64\.mono\temp\obj\Tools\jam the jam.csprojAssemblyReference.cache
+C:\Users\Naamed\Documents\GitHub\ludum64\.mono\temp\obj\Tools\jam the jam.dll
+C:\Users\Naamed\Documents\GitHub\ludum64\.mono\temp\obj\Tools\jam the jam.pdb
