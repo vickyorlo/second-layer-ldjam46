@@ -1,20 +1,19 @@
-extends Node
+extends Popup
 
 
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-onready var paddle = get_node("res://Scenes/paddle.gd")
 var already_paused
 var selected_menu
-var visible
+
 
 # Called when the node enters the scene tree for the first time.
 func change_menu_color():
 	$resume.color = Color.gray
 	$restart.color = Color.gray
 	$quit.color = Color.gray
-	
+
 	match selected_menu:
 		0:
 			$resume.color = Color.yellow
@@ -22,7 +21,14 @@ func change_menu_color():
 			$restart.color = Color.blue
 		2:
 			$quit.color = Color.green
-func _input(event):
+
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	#print("a")
 	if not visible:
 		if Input.is_action_just_pressed("menu"):
 			# Pause game
@@ -32,7 +38,6 @@ func _input(event):
 			selected_menu = 0
 			change_menu_color()
 			# Show popup
-			paddle.set_process_input(false)
 			popup()
 	else:
 		if Input.is_action_just_pressed("ui_down"):
@@ -50,7 +55,6 @@ func _input(event):
 					# Resume game
 					if not already_paused:
 						get_tree().paused = false
-					player.set_process_input(true)
 					hide()
 				1:
 					# Restart game
@@ -59,10 +63,4 @@ func _input(event):
 				2:
 					# Quit game
 					get_tree().quit()
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+	pass
