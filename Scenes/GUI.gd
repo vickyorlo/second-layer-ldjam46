@@ -22,3 +22,8 @@ func _process(delta):
 func _on_died():
 	$CenterContainer/TextureRect.visible = true
 	pass # Replace with function body.
+
+
+func _on_real_shit_timer_timeout():
+	$real_shit.text = Global.quotes[randi() % Global.quotes.size()]
+	pass # Replace with function body.

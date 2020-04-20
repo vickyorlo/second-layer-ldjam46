@@ -18,6 +18,7 @@ func _ready():
 
 func _on_start_pressed():
 	get_tree().change_scene("res://Scenes/level.tscn")
+	Global.heatlh_drain = 10
 	pass # Replace with function body.
 
 

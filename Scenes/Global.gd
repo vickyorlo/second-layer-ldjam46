@@ -7,7 +7,7 @@ extends Node2D
 
 export(int) var score = 0
 export(float) var health = 100.0
-export(float) var heatlh_drain = 5
+export(float) var heatlh_drain = 0
 
 export(float) var enemy_speed = 100
 
@@ -77,7 +77,7 @@ func _ready():
 
 func _process(delta):
 	if health > 0:
-		health -= 10 * delta
+		health -= heatlh_drain * delta
 		health = clamp(health,0,100)
 		if health == 0:
 			heavy_gravity()
