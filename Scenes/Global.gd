@@ -18,7 +18,7 @@ export(Array, String) var quotes
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	quotes = [
-		"nutbusters",
+		"The water that supports the jet ski is the same that engulfs it",
 		"Doubt the authentity of mirros, as means of gazing is false",
 		"At the start of the month bread rises, at the end of the month the laundry is gone",
 		"Let the horse worry, for it has the larger head",
@@ -36,6 +36,7 @@ func _ready():
 		"Strongest things in the world is an oar, bundle of sticks and a pole",
 		"When running out of bread, place teeth onto a nail",
 		"Chikens rarely recycle eggs",
+		"It is safe to turn off your computer",
 		"Yawns exchange mouths like squirrels do trees",
 		"When an eye is being tightened, another will pour water",
 		"This game is nothing but a metaphor to the struggle between man and his own divinity",
@@ -70,6 +71,7 @@ func _ready():
 		"Winter keeps it's manners, in the same way a dish holds it's flavour",
 		"To build a house, you need to make it",
 		"Debt is a brother when taken, nephew when paid",
+		"Against all laws of aviations, bees can fly. And so can you",
 		"",
 	]
 	pass # Replace with function body.
