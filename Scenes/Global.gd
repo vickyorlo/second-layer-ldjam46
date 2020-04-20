@@ -1,4 +1,4 @@
-extends Node
+extends Node2D
 
 
 # Declare member variables here. Examples:
@@ -74,8 +74,17 @@ func _ready():
 
 
 func _process(delta):
-	health -= 10 * delta
-	pass
+	if health > 0:
+		health -= 10 * delta
+		health = clamp(health,0,100)
+		if health == 0:
+			heavy_gravity()
+
+func heavy_gravity():
+	Physics2DServer.area_set_param(get_world_2d().get_space(), Physics2DServer.AREA_PARAM_GRAVITY, 200)
+
+func normal_gravity():
+	Physics2DServer.area_set_param(get_world_2d().get_space(), Physics2DServer.AREA_PARAM_GRAVITY, 98)
 
 func gameover():
 	emit_signal("die")

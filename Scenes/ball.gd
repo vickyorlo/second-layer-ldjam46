@@ -14,8 +14,13 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	if Global.health == 0:
+		if !$AudioStreamPlayer2D.playing:
+			$AudioStreamPlayer2D.play()
+	else:
+		$AudioStreamPlayer2D.stop()
+	pass
 
 func _integrate_forces(state):
 	if state.linear_velocity.length()>max_speed:
@@ -32,6 +37,8 @@ func death():
 
 func _on_RigidBody2D_body_entered(body):
 	if body is paddle:
+		if Global.health == 0:
+			Global.normal_gravity()
 		Global.health += 15
 		Global.score += 10
 	if body is bounceoff_barrier:

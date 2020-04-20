@@ -1,12 +1,17 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Assets/masterguard.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Enemies/block_all.gd" type="Script" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 163.218
 height = 156.458
 
 [node name="block_all" type="KinematicBody2D"]
+scale = Vector2( 0.25, 0.25 )
+collision_layer = 4
+collision_mask = 3
+script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )

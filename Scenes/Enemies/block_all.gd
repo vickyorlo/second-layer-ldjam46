@@ -1,5 +1,5 @@
-extends Area2D
-class_name death_barrier
+extends Enemy
+
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -14,10 +14,3 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-
-
-func _on_death_body_entered(body):
-	if body is ball or body is paddle:
-		body.death()
-	if body is Enemy:
-		body.queue_free()

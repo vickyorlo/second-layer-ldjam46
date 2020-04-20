@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/hombre gritando.ogg-73ef8f459e1a59513e7fc301a84f394a.oggstr"
+
+[deps]
+
+source_file="res://Audio/hombre gritando.ogg"
+dest_files=[ "res://.import/hombre gritando.ogg-73ef8f459e1a59513e7fc301a84f394a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

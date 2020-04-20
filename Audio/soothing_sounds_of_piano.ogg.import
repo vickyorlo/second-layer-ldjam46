@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/soothing_sounds_of_piano.ogg-dc9dc6a616c1d56ff101a6dcac3cb585.oggstr"
+
+[deps]
+
+source_file="res://Audio/soothing_sounds_of_piano.ogg"
+dest_files=[ "res://.import/soothing_sounds_of_piano.ogg-dc9dc6a616c1d56ff101a6dcac3cb585.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

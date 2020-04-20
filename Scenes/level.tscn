@@ -1,14 +1,16 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Scenes/ball.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/paddle.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/bounceoff_barrier.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/death_barrier.tscn" type="PackedScene" id=4]
-[ext_resource path="res://gravity_soup.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Audio/soothing_sounds_of_piano.ogg" type="AudioStream" id=5]
 [ext_resource path="res://Scenes/GUI.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/background.jpg" type="Texture" id=7]
 [ext_resource path="res://Scenes/wall.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Assets/scrollingtile.png" type="Texture" id=9]
+[ext_resource path="res://Audio/natural_ambiance.ogg" type="AudioStream" id=10]
+[ext_resource path="res://Scenes/Enemies/SpawnArea.tscn" type="PackedScene" id=13]
 
 [sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
@@ -80,5 +82,15 @@ scale = Vector2( 0.699309, 0.699309 )
 z_index = -6
 texture = ExtResource( 7 )
 
-[node name="gravity_soup" parent="." instance=ExtResource( 5 )]
-position = Vector2( 565.519, -556.886 )
+[node name="SpawnArea" parent="." instance=ExtResource( 13 )]
+position = Vector2( 612.928, -1546.47 )
+
+[node name="ambience" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+volume_db = -5.0
+autoplay = true
+
+[node name="piano" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -5.0
+autoplay = true
