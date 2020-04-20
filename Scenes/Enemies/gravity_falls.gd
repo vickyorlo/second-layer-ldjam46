@@ -1,9 +1,11 @@
-extends KinematicBody2D
-class_name Enemy
+extends RigidBody2D
+class_name gravity_falls
+
 
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -11,6 +13,5 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	move_and_slide(Vector2.DOWN * Global.enemy_speed)
-	pass
+#func _process(delta):
+#	pass

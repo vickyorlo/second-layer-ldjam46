@@ -19,5 +19,5 @@ func _ready():
 func _on_death_body_entered(body):
 	if body is ball or body is paddle:
 		body.death()
-	if body is Enemy:
+	if body is Enemy or gravity_falls:
 		body.queue_free()

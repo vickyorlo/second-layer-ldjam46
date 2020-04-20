@@ -34,6 +34,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Scenes/death_barrier.gd"
 }, {
+"base": "RigidBody2D",
+"class": "gravity_falls",
+"language": "GDScript",
+"path": "res://Scenes/Enemies/gravity_falls.gd"
+}, {
 "base": "KinematicBody2D",
 "class": "paddle",
 "language": "GDScript",
@@ -45,6 +50,7 @@ _global_script_class_icons={
 "ball": "",
 "bounceoff_barrier": "",
 "death_barrier": "",
+"gravity_falls": "",
 "paddle": ""
 }
 
