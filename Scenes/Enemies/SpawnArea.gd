@@ -26,6 +26,6 @@ func _on_SpawnTimer_timeout():
 	enemy.set_as_toplevel(true)
 	add_child(enemy)
 
-	$SpawnTimer.wait_time = clamp(5.0 - Global.score/100,0.5,5)
+	$SpawnTimer.wait_time = clamp(5.0 - Global.score/200,0.5,5)
 
 

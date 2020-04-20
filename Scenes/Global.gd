@@ -83,7 +83,7 @@ func _process(delta):
 			heavy_gravity()
 	else:
 		score -= 10 * delta
-	enemy_speed = 100 + score/50
+	enemy_speed = 100 + score/100
 
 func heavy_gravity():
 	Physics2DServer.area_set_param(get_world_2d().get_space(), Physics2DServer.AREA_PARAM_GRAVITY, 200)
