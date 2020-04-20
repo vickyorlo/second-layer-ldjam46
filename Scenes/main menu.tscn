@@ -116,10 +116,10 @@ anchor_left = 0.249
 anchor_top = 0.06
 anchor_right = 0.459
 anchor_bottom = 0.104
-margin_left = 0.108994
-margin_top = 0.079998
-margin_right = -0.281006
-margin_bottom = 84.072
+margin_left = -199.891
+margin_top = -29.92
+margin_right = -194.281
+margin_bottom = 54.072
 custom_fonts/font = ExtResource( 3 )
 text = "The Icon of Sin
 
@@ -129,10 +129,10 @@ __meta__ = {
 }
 
 [node name="icon of sin5" type="Label" parent="popup/instructionbook"]
-margin_left = 609.842
-margin_top = 34.0626
-margin_right = 797.842
-margin_bottom = 148.063
+margin_left = 480.384
+margin_top = 28.0
+margin_right = 734.384
+margin_bottom = 75.0
 custom_fonts/font = ExtResource( 3 )
 text = "The Invisible Hands"
 __meta__ = {
@@ -140,10 +140,10 @@ __meta__ = {
 }
 
 [node name="icon of sin6" type="Label" parent="popup/instructionbook"]
-margin_left = 651.068
-margin_top = 213.559
-margin_right = 887.068
-margin_bottom = 327.559
+margin_left = 516.351
+margin_top = 175.541
+margin_right = 1359.35
+margin_bottom = 813.541
 custom_fonts/font = ExtResource( 3 )
 text = "The Orb"
 __meta__ = {
@@ -151,10 +151,10 @@ __meta__ = {
 }
 
 [node name="icon of sin2" type="Label" parent="popup/instructionbook"]
-margin_left = 221.806
-margin_top = 327.09
-margin_right = 409.806
-margin_bottom = 441.09
+margin_left = 29.0
+margin_top = 303.0
+margin_right = 250.0
+margin_bottom = 339.0
 custom_fonts/font = ExtResource( 3 )
 text = "The Icon of Ranch"
 __meta__ = {
@@ -162,10 +162,10 @@ __meta__ = {
 }
 
 [node name="icon of sin3" type="Label" parent="popup/instructionbook"]
-margin_left = 208.301
-margin_top = 442.497
-margin_right = 429.301
-margin_bottom = 556.497
+margin_left = 39.5917
+margin_top = 422.225
+margin_right = 338.592
+margin_bottom = 458.225
 custom_fonts/font = ExtResource( 3 )
 text = "The Icon of Compassion"
 __meta__ = {
@@ -173,10 +173,10 @@ __meta__ = {
 }
 
 [node name="icon of sin4" type="Label" parent="popup/instructionbook"]
-margin_left = 638.009
-margin_top = 444.953
-margin_right = 937.009
-margin_bottom = 558.953
+margin_left = 505.0
+margin_top = 358.0
+margin_right = 631.0
+margin_bottom = 405.0
 custom_fonts/font = ExtResource( 3 )
 text = "The Fallen"
 __meta__ = {
@@ -184,10 +184,10 @@ __meta__ = {
 }
 
 [node name="icon of gluttony" type="Label" parent="popup/instructionbook"]
-margin_left = 220.578
-margin_top = 168.711
-margin_right = 467.578
-margin_bottom = 282.711
+margin_left = 12.0
+margin_top = 144.0
+margin_right = 259.0
+margin_bottom = 258.0
 custom_fonts/font = ExtResource( 3 )
 text = "The Icon of Gluttony
 
@@ -197,7 +197,7 @@ __meta__ = {
 }
 
 [node name="masterguard" type="Sprite" parent="popup/instructionbook"]
-position = Vector2( 129.151, 98.803 )
+position = Vector2( 107.671, 88.7792 )
 scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 8 )
 
@@ -206,10 +206,10 @@ anchor_left = 0.264
 anchor_top = 0.133
 anchor_right = 0.436
 anchor_bottom = 0.204
-margin_left = 0.422485
-margin_top = 0.281212
-margin_right = -0.325531
-margin_bottom = -0.140793
+margin_left = -52.5076
+margin_top = -21.7063
+margin_right = 75.7444
+margin_bottom = -39.1283
 text = "Their sinful nature will not let the Orb nor the Invisible Hands pass."
 autowrap = true
 __meta__ = {
@@ -217,10 +217,10 @@ __meta__ = {
 }
 
 [node name="icon of glut 2" type="Label" parent="popup/instructionbook"]
-margin_left = 237.02
-margin_top = 223.583
-margin_right = 384.02
-margin_bottom = 271.583
+margin_left = 225.0
+margin_top = 222.0
+margin_right = 416.0
+margin_bottom = 270.0
 text = "The omnivorous Orb will be drawn towards the Icon. "
 autowrap = true
 __meta__ = {
@@ -228,21 +228,20 @@ __meta__ = {
 }
 
 [node name="icon of glut 5" type="Label" parent="popup/instructionbook"]
-margin_left = 644.63
-margin_top = 496.141
-margin_right = 791.63
-margin_bottom = 544.141
+margin_left = 596.364
+margin_top = 438.429
+margin_right = 859.364
+margin_bottom = 473.429
 text = "The fallen have no control over their fate."
-autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="icon of glut 3" type="Label" parent="popup/instructionbook"]
-margin_left = 236.0
-margin_top = 372.0
-margin_right = 419.0
-margin_bottom = 420.0
+margin_left = 199.0
+margin_top = 353.0
+margin_right = 446.0
+margin_bottom = 408.0
 text = "The pure Invisible Hands will be repulsed, though the Orb feels nothing."
 autowrap = true
 __meta__ = {
@@ -250,10 +249,10 @@ __meta__ = {
 }
 
 [node name="icon of glut 6" type="Label" parent="popup/instructionbook"]
-margin_left = 636.819
-margin_top = 76.4153
-margin_right = 819.819
-margin_bottom = 124.415
+margin_left = 615.65
+margin_top = 85.0848
+margin_right = 809.65
+margin_bottom = 113.085
 text = "Perfectly good. You are they."
 autowrap = true
 __meta__ = {
@@ -261,21 +260,26 @@ __meta__ = {
 }
 
 [node name="icon of glut 4" type="Label" parent="popup/instructionbook"]
-margin_left = 228.634
-margin_top = 491.091
-margin_right = 411.634
-margin_bottom = 539.091
-text = "The infinite compassion of the Invisible Hands will pass right through. The Orb is not so lucky."
+anchor_left = 0.249
+anchor_top = 0.706
+anchor_right = 0.577
+anchor_bottom = 0.819
+margin_left = 0.108994
+margin_top = -0.172333
+margin_right = -0.281006
+margin_bottom = -0.238342
+text = "The infinite compassion of the Invisible Hands will pass right through. 
+The Orb is not so lucky."
 autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="icon of glut 7" type="Label" parent="popup/instructionbook"]
-margin_left = 613.897
-margin_top = 262.669
-margin_right = 796.897
-margin_bottom = 327.669
+margin_left = 581.272
+margin_top = 238.819
+margin_right = 810.272
+margin_bottom = 269.819
 text = "The Orb shall be protected at all costs."
 autowrap = true
 __meta__ = {
@@ -288,7 +292,7 @@ scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 6 )
 
 [node name="rigidbody_enemy" type="Sprite" parent="popup/instructionbook"]
-position = Vector2( 569.671, 513.195 )
+position = Vector2( 536.736, 457.348 )
 scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 10 )
 
