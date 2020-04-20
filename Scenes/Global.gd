@@ -72,7 +72,21 @@ func _ready():
 		"To build a house, you need to make it",
 		"Debt is a brother when taken, nephew when paid",
 		"Against all laws of aviations, bees can fly. And so can you",
-		"",
+		"When among the crows, caw as the crows do",
+		"Don’t teach a father how to make children",
+		"The drowning man clutches at a razor",
+		"Don’t divide the skin while it’s still on the bear",
+		"Not my circus, not my monkeys",
+		"Don’t call the wolf from the forest",
+		"The way you make your bed is the way you will sleep in it.",
+		"The virtue above all virtues is to keep your tongue behind your teeth.",
+		"You do not check the teeth of a horse you were gifted.",
+		"A terrible ballerina blames the hem of her skirt.",
+		"Do not jump at the sun with a hoe.",
+		"And the one who does not drink with us - we will catch him with two sticks.",
+		"You can either have the fish, or you can have the aquarium.",
+		"Summer would be longer if not for winter.",
+		"If a woman wants to, she will put out even through a keyhole.",
 	]
 	pass # Replace with function body.
 
