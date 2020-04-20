@@ -37,6 +37,10 @@ func death():
 
 func _on_RigidBody2D_body_entered(body):
 	if body is paddle:
+			if !$slap_city_player.playing:
+				$slap_city_player.play()
+	else:
+		$slap_city_player.stop()
 		if Global.health == 0:
 			Global.normal_gravity()
 		Global.health += 15
