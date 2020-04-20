@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Assets/mainmenubackground.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/main menu.gd" type="Script" id=2]
@@ -12,6 +12,8 @@
 [ext_resource path="res://Assets/rigidbody_enemy.png" type="Texture" id=10]
 [ext_resource path="res://Assets/paddle.png" type="Texture" id=11]
 [ext_resource path="res://Assets/football.png" type="Texture" id=12]
+[ext_resource path="res://Assets/font - Glacial Indifference.tres" type="DynamicFont" id=13]
+[ext_resource path="res://Assets/tutorial_hack.png" type="Texture" id=14]
 
 [sub_resource type="DynamicFont" id=1]
 size = 30
@@ -93,6 +95,22 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="Label" type="Label" parent="background"]
+margin_left = 329.775
+margin_top = 67.9559
+margin_right = 786.775
+margin_bottom = 150.956
+rect_scale = Vector2( 2, 2 )
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 1, 1, 1, 0.619608 )
+custom_colors/font_outline_modulate = Color( 0.694118, 0.12549, 0.12549, 1 )
+custom_colors/font_color_shadow = Color( 0.027451, 0.0156863, 0.0156863, 1 )
+text = "Second Layer"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
 autoplay = true
@@ -116,10 +134,10 @@ anchor_left = 0.249
 anchor_top = 0.06
 anchor_right = 0.459
 anchor_bottom = 0.104
-margin_left = -199.891
-margin_top = -29.92
-margin_right = -194.281
-margin_bottom = 54.072
+margin_left = -1.89099
+margin_top = -6.92
+margin_right = -2.28101
+margin_bottom = 77.072
 custom_fonts/font = ExtResource( 3 )
 text = "The Icon of Sin
 
@@ -129,10 +147,10 @@ __meta__ = {
 }
 
 [node name="icon of sin5" type="Label" parent="popup/instructionbook"]
-margin_left = 480.384
-margin_top = 28.0
-margin_right = 734.384
-margin_bottom = 75.0
+margin_left = 604.418
+margin_top = 39.089
+margin_right = 840.418
+margin_bottom = 124.089
 custom_fonts/font = ExtResource( 3 )
 text = "The Invisible Hands"
 __meta__ = {
@@ -140,10 +158,10 @@ __meta__ = {
 }
 
 [node name="icon of sin6" type="Label" parent="popup/instructionbook"]
-margin_left = 516.351
-margin_top = 175.541
-margin_right = 1359.35
-margin_bottom = 813.541
+margin_left = 648.874
+margin_top = 204.277
+margin_right = 748.874
+margin_bottom = 292.277
 custom_fonts/font = ExtResource( 3 )
 text = "The Orb"
 __meta__ = {
@@ -151,10 +169,10 @@ __meta__ = {
 }
 
 [node name="icon of sin2" type="Label" parent="popup/instructionbook"]
-margin_left = 29.0
-margin_top = 303.0
-margin_right = 250.0
-margin_bottom = 339.0
+margin_left = 210.239
+margin_top = 314.746
+margin_right = 431.239
+margin_bottom = 409.746
 custom_fonts/font = ExtResource( 3 )
 text = "The Icon of Ranch"
 __meta__ = {
@@ -162,10 +180,10 @@ __meta__ = {
 }
 
 [node name="icon of sin3" type="Label" parent="popup/instructionbook"]
-margin_left = 39.5917
-margin_top = 422.225
-margin_right = 338.592
-margin_bottom = 458.225
+margin_left = 172.215
+margin_top = 463.438
+margin_right = 471.215
+margin_bottom = 499.438
 custom_fonts/font = ExtResource( 3 )
 text = "The Icon of Compassion"
 __meta__ = {
@@ -173,10 +191,10 @@ __meta__ = {
 }
 
 [node name="icon of sin4" type="Label" parent="popup/instructionbook"]
-margin_left = 505.0
-margin_top = 358.0
-margin_right = 631.0
-margin_bottom = 405.0
+margin_left = 646.448
+margin_top = 440.583
+margin_right = 772.448
+margin_bottom = 479.583
 custom_fonts/font = ExtResource( 3 )
 text = "The Fallen"
 __meta__ = {
@@ -184,10 +202,10 @@ __meta__ = {
 }
 
 [node name="icon of gluttony" type="Label" parent="popup/instructionbook"]
-margin_left = 12.0
-margin_top = 144.0
-margin_right = 259.0
-margin_bottom = 258.0
+margin_left = 203.379
+margin_top = 185.382
+margin_right = 450.379
+margin_bottom = 299.382
 custom_fonts/font = ExtResource( 3 )
 text = "The Icon of Gluttony
 
@@ -206,10 +224,10 @@ anchor_left = 0.264
 anchor_top = 0.133
 anchor_right = 0.436
 anchor_bottom = 0.204
-margin_left = -52.5076
-margin_top = -21.7063
-margin_right = 75.7444
-margin_bottom = -39.1283
+margin_left = -34.8202
+margin_top = -10.3416
+margin_right = 70.4318
+margin_bottom = -27.7635
 text = "Their sinful nature will not let the Orb nor the Invisible Hands pass."
 autowrap = true
 __meta__ = {
@@ -217,10 +235,10 @@ __meta__ = {
 }
 
 [node name="icon of glut 2" type="Label" parent="popup/instructionbook"]
-margin_left = 225.0
-margin_top = 222.0
-margin_right = 416.0
-margin_bottom = 270.0
+margin_left = 197.903
+margin_top = 231.307
+margin_right = 487.903
+margin_bottom = 262.307
 text = "The omnivorous Orb will be drawn towards the Icon. "
 autowrap = true
 __meta__ = {
@@ -228,20 +246,20 @@ __meta__ = {
 }
 
 [node name="icon of glut 5" type="Label" parent="popup/instructionbook"]
-margin_left = 596.364
-margin_top = 438.429
-margin_right = 859.364
-margin_bottom = 473.429
+margin_left = 588.46
+margin_top = 511.197
+margin_right = 851.46
+margin_bottom = 544.197
 text = "The fallen have no control over their fate."
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="icon of glut 3" type="Label" parent="popup/instructionbook"]
-margin_left = 199.0
-margin_top = 353.0
-margin_right = 446.0
-margin_bottom = 408.0
+margin_left = 199.839
+margin_top = 360.878
+margin_right = 469.839
+margin_bottom = 408.878
 text = "The pure Invisible Hands will be repulsed, though the Orb feels nothing."
 autowrap = true
 __meta__ = {
@@ -249,10 +267,10 @@ __meta__ = {
 }
 
 [node name="icon of glut 6" type="Label" parent="popup/instructionbook"]
-margin_left = 615.65
-margin_top = 85.0848
-margin_right = 809.65
-margin_bottom = 113.085
+margin_left = 629.822
+margin_top = 93.3627
+margin_right = 927.822
+margin_bottom = 119.363
 text = "Perfectly good. You are they."
 autowrap = true
 __meta__ = {
@@ -264,10 +282,10 @@ anchor_left = 0.249
 anchor_top = 0.706
 anchor_right = 0.577
 anchor_bottom = 0.819
-margin_left = 0.108994
-margin_top = -0.172333
-margin_right = -0.281006
-margin_bottom = -0.238342
+margin_left = -12.5459
+margin_top = 45.4267
+margin_right = -35.2979
+margin_bottom = 16.3607
 text = "The infinite compassion of the Invisible Hands will pass right through. 
 The Orb is not so lucky."
 autowrap = true
@@ -276,10 +294,10 @@ __meta__ = {
 }
 
 [node name="icon of glut 7" type="Label" parent="popup/instructionbook"]
-margin_left = 581.272
-margin_top = 238.819
-margin_right = 810.272
-margin_bottom = 269.819
+margin_left = 580.637
+margin_top = 244.592
+margin_right = 881.637
+margin_bottom = 266.592
 text = "The Orb shall be protected at all costs."
 autowrap = true
 __meta__ = {
@@ -287,22 +305,22 @@ __meta__ = {
 }
 
 [node name="paddle_pass" type="Sprite" parent="popup/instructionbook"]
-position = Vector2( 127.685, 513.195 )
+position = Vector2( 111.763, 527.79 )
 scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 6 )
 
 [node name="rigidbody_enemy" type="Sprite" parent="popup/instructionbook"]
-position = Vector2( 536.736, 457.348 )
+position = Vector2( 529.438, 493.836 )
 scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 10 )
 
 [node name="soup_in_real_life" type="Sprite" parent="popup/instructionbook"]
-position = Vector2( 130.14, 244.32 )
+position = Vector2( 90.3346, 241.003 )
 scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 9 )
 
 [node name="ball_pass" type="Sprite" parent="popup/instructionbook"]
-position = Vector2( 126.457, 376.916 )
+position = Vector2( 109.871, 380.233 )
 scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 7 )
 
@@ -315,6 +333,10 @@ texture = ExtResource( 12 )
 position = Vector2( -77.3789, -1485.66 )
 scale = Vector2( 5, 5 )
 texture = ExtResource( 11 )
+
+[node name="Sprite" type="Sprite" parent="popup/instructionbook"]
+position = Vector2( 428.432, 307.885 )
+texture = ExtResource( 14 )
 [connection signal="pressed" from="menu buttons/Control/ColorRect/grid/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="menu buttons/Control/ColorRect/grid/dont start" to="." method="_on_dont_start_pressed"]
 [connection signal="pressed" from="menu buttons/Control/ColorRect/grid/instruct" to="." method="_on_instruct_pressed"]
