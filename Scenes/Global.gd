@@ -9,6 +9,8 @@ export(int) var score = 0
 export(float) var health = 100.0
 export(float) var heatlh_drain = 5
 
+export(float) var enemy_speed = 100
+
 signal die
 
 export(Array, String) var quotes
@@ -79,6 +81,9 @@ func _process(delta):
 		health = clamp(health,0,100)
 		if health == 0:
 			heavy_gravity()
+	else:
+		score -= 10 * delta
+	enemy_speed = 100 + score/50
 
 func heavy_gravity():
 	Physics2DServer.area_set_param(get_world_2d().get_space(), Physics2DServer.AREA_PARAM_GRAVITY, 200)

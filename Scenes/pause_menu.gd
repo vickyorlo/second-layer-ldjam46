@@ -58,6 +58,8 @@ func _process(delta):
 					hide()
 				1:
 					# Restart game
+					Global.score = 0
+					Global.health = 0
 					get_tree().change_scene("res://Scenes/level.tscn")
 					get_tree().paused = false
 				2:
